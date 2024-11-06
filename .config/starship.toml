@@ -85,7 +85,10 @@ disabled = true
 disabled = true
 
 [docker_context]
-disabled = true
+format = 'via [ $context](blue bold)'
+disabled = false
+detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'docker-compose*.yml', 'docker-compose*.yaml', 'Dockerfile']
+detect_folders = ['.git']
 
 [helm]
 disabled = true
@@ -100,4 +103,7 @@ disabled = true
 disabled = true
 
 [terraform]
+disabled = true
+
+[package]
 disabled = true
